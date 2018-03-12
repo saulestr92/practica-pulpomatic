@@ -1,23 +1,25 @@
-# practica-pulpomatic
+# Práctica-pulpomatic
 Practica evaluación de conocimientos
 
 ## Estructura
 * project: carpeta del proyecto
-* libs: helpers o funciones que se utilizan mas de una vez
+* libs: helpers o funciones que se utilizan más de una vez
 * middlewares: condiciones aplicadas a distintas rutas 
 * modelos: modelos de los documentos o registros de la base de datos
-* public: archivos publicos como librerias js hojas de estilo o imagenes
+* public: archivos públicos como librerías js hojas de estilo o imágenes
 * rutas: rutas definidas del proyecto
-* vistas: hojas en extension jade(motor de plantillas utilizado)
+* vistas: hojas en extensión jade(motor de plantillas utilizado)
 
 ## Dependencias 
-tener instalado node.js, el paquete npm y mongoDB 
+Tener instalado node.js, el paquete npm y mongoDB 
 
-## instalacion 
-ejecutar el comando npm install
+## Instalación 
+Ejecutar el comando npm install
 
-## Configuracion 
-en la carpeta project el archivo configdb se debe cambiar en la valiable config la url por la de su base de datos 
+## Configuración 
+En la carpeta project el archivo configdb se debe cambiar en la variable config la url por la de su base de datos 
 
-## Ejecucion 
-para ejecutar la aplicacion en la terminal de node ejecutar npm start
+## Ejecución 
+Para ejecutar la aplicación en la terminal de node ejecutar npm start
+
+Aparecerá el puerto por el cual se debe ingresar en el explorador web la primer pantalla es la de login si no hay ningún registro se debe registrar en el link que dice registrar una vez registrado se puede acceder a la pantalla que contiene un mapa del lado izquierdo y unos controles del lado derecho
