@@ -22,4 +22,4 @@ En la carpeta project el archivo configdb se debe cambiar en la variable config 
 ## Ejecución 
 Para ejecutar la aplicación en la terminal de node ejecutar npm start
 
-Aparecerá el puerto por el cual se debe ingresar en el explorador web la primer pantalla es la de login si no hay ningún registro se debe registrar en el link que dice registrar una vez registrado se puede acceder a la pantalla que contiene un mapa del lado izquierdo y unos controles del lado derecho
+Aparecerá el puerto por el cual se debe ingresar en el explorador web, la primer pantalla es la de login si no hay ningún registro se debe registrar en el link que dice registrar,una vez registrado se puede acceder a la pantalla que contiene un mapa del lado izquierdo y unos controles del lado derecho
