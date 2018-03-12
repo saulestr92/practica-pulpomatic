@@ -1,0 +1,21 @@
+{
+  "name": "practica-pulpomatic",
+  "version": "0.0.1",
+  "description": "practica para evaluacion de conocimientos",
+  "main": "index.js",
+  "scripts": {
+    "develop": "nodemon project/app.js",
+    "start": "node project/app.js"
+  },
+  "author": "saúl",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "jade": "^1.11.0",
+    "jade-bootstrap": "^1.0.14",
+    "mongoose": "^5.0.9",
+    "morgan": "^1.9.0"
+  }
+}

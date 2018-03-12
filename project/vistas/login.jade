@@ -1,0 +1,34 @@
+
+extends ./layout.jade
+ 
+block contenido
+
+      form.form-signin(method='#{metodo}',action='#{url}')
+        center
+         h2.form-signin-heading Bienvenido
+         br
+         if (resp==1)
+          div.alert.alert-warning(role='alert') Contraseña invalida
+         else if (resp==0)
+          div.alert.alert-warning(role='alert') No estas Registrado #[a(href="/register") registrate]
+         else if (resp==2)
+          div.alert.alert-success(role='alert') Ya estas registrado inicia sesión
+         div.form-group
+          label.form-check-label(for='Correo') Correo electronico
+          input#correo.input-block-level(name='Correo',type='text', placeholder='Correo electronico', value='#{datos.correo}')
+         div.form-group
+          label.form-check-label(for='Password') Contraseña
+          input#password.input-block-level(name='Password',type='Password', placeholder='Contraseña', value='#{datos.password}')
+          p No tienes cuenta #[a(href="/register") registrate]
+          br
+         button.btn.btn-large.btn-primary(type='submit') iniciar sesión
+        
+         
+block js
+         if (error)
+           script.
+            $(document).ready(function() {
+             agregaerrores(!{JSON.stringify(error )});
+            });
+            
+          

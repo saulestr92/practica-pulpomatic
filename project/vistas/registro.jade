@@ -1,0 +1,36 @@
+
+extends ./layout.jade
+ 
+block contenido
+
+      form.form-signin(method='#{metodo}',action='#{url}')
+        center
+         h2.form-signin-heading Registrate
+         br
+         if (existe)
+          div.alert.alert-warning(role='alert') Ya estas registrado #[a(href="/") inicia sesión] 
+         div.form-group
+          label.form-check-label(for='Password') Nombre
+          input#nombre.input-block-level(name='Nombre',type='text', placeholder='Nombre' , value='#{user.nombre}')
+         div.form-group
+          label.form-check-label(for='Password') Correo electronico
+          input#correo.input-block-level(name='Correo',type='text', placeholder='Correo electronico', value='#{user.correo}')
+         div.form-group
+          label.form-check-label(for='Password') Contraseña
+          input#password.input-block-level(name='Password',type='Password', placeholder='Contraseña', value='#{user.password}')
+         p Ya tienes cuenta #[a(href="/") inicia sesión]
+         br
+         button.btn.btn-large.btn-primary(type='submit') Registrar
+         
+block js
+         if (error)
+           script.
+            $(document).ready(function() {
+             agregaerrores(!{JSON.stringify(error )});
+            });
+         script.
+          $(document).ready(function() {
+           restringe('nombre','[^a-zA-ZáéíóúÁÉÍÓÚ]');
+          });
+            
+          
